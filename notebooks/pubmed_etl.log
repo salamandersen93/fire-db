@@ -1,0 +1,7 @@
+2025-07-14 01:04:44,405 - INFO - Starting PubMed ETL with config: ETLConfig(email='mikeandersen622@gmail.com', max_tries=10, sleep_between_tries=20, batch_size=1000, target_count=20000, incremental=False, max_records_per_query=9999)
+2025-07-14 01:04:44,407 - INFO - Full run: 2024/07/14 to 2025/07/14
+2025-07-14 01:04:44,408 - INFO - Search term: ("Exercise"[MeSH Terms] OR "Physical Conditioning, Human"[MeSH Terms] OR "Resistance Training"[MeSH Terms] OR "Aerobic Exercise"[MeSH Terms] OR "High-Intensity Interval Training"[MeSH Terms] OR "Plyometric Exercise"[MeSH Terms] OR "Endurance Training"[MeSH Terms] OR "Muscle Stretching Exercises"[MeSH Terms] OR "Physical Fitness"[MeSH Terms] OR "Cardiorespiratory Fitness"[MeSH Terms] OR "Exercise Therapy"[MeSH Terms] OR "Walking"[MeSH Terms] OR "Swimming"[MeSH Terms] OR "Gymnastics"[MeSH Terms]) AND ("2024/07/14"[Date - Publication] : "2025/07/14"[Date - Publication])
+2025-07-14 01:04:53,672 - INFO - Collected 18234 PMIDs
+2025-07-14 01:07:07,593 - INFO - Extracted 18234 records
+2025-07-14 01:07:58,785 - INFO - Saved 15986 records (full refresh)
+2025-07-14 01:08:08,575 - INFO - ETL completed successfully: RunMetadata(script_name='pubmed_ingestion', start_time=datetime.datetime(2025, 7, 14, 1, 4, 44, 405424), end_time=datetime.datetime(2025, 7, 14, 1, 8, 8, 575103), incremental_run=False, total_pubs=15986, new_records=15986, status=<ETLStatus.SUCCESS: 'SUCCESS'>, duration_seconds=204.169679)
