@@ -18,23 +18,17 @@ Performance-aware Design: Built for lightweight serverless Databricks environmen
 
 Project Structure
 
+```
 text pubmed_etl/ 
-
 ├── pubmed_etl.py # Main ETL driver 
-
 ├── modules/ │ 
-
 ├── meshmap.py # MeSH mapping tree + outcome keyword list 
-
 │ └── pubmed_config.py # Central config 
-
 ├── firedb/ │ 
-
 └── fire-db/ # Repos root 
-
 ├── pubmed_etl.log # Logging output 
-
 └── README.md # You are here
+```
 
 Extracted Knowledge Format
 Each PubMed article is transformed to include:
@@ -60,11 +54,13 @@ TARGET_COUNT = 10000            # Articles to fetch per run
 Sample Query Output:
 
 Querying high-confidence relationships:
+```
 SELECT exercise_modality, relationship_type, outcome, confidence_score
 FROM firedb_exercise_outcome_relationships
 WHERE confidence_score > 0.8
 ORDER BY confidence_score DESC
 LIMIT 20;
+```
 
 Technologies Used:
 Data Source:	PubMed (via NCBI Entrez + Biopython)
