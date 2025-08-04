@@ -1,6 +1,6 @@
 # fire-db
 
-#Fitness &amp; Evidence Repository Database(FIRE DB)
+# Fitness &amp; Evidence Repository Database(FIRE DB)
 
 ## PubMed Fitness ETL with Relationship Extraction
 This project implements a scalable ETL pipeline for ingesting, processing, and extracting structured knowledge from PubMed articles related to exercise modalities and fitness outcomes. It enriches biomedical abstracts with relationship triplets using a combination of SpaCy NLP and LLaMA 3 LLMs, and stores outputs in Delta Lake format using Apache Spark on Databricks.
@@ -97,7 +97,7 @@ Duration: 314.6 seconds
 - Improve LLM prompting with few-shot examples.
 - Add GUI/dashboard for real-time monitoring.
 - Allow for user-specified MeSH filters via config or CLI.
-- Integrate with additional datasets using Fuzzy Matching and semantic embeddings for relationship extrapolation
+- Integrate with additional datasets (WGER, Web of Science) using Fuzzy Matching and semantic embeddings for relationship extrapolation
 
 ### License
 This project is for academic and research use only.
