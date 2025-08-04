@@ -87,18 +87,15 @@ Total records: 9,872
 New records: 489
 Duration: 314.6 seconds
 
+```
 === TOP CONFIDENCE RELATIONSHIPS ===
 +---------------------+------------------+-------------------------+----------------+
-
 |exercise_modality    |relationship_type |outcome                  |confidence_score|
-
 +---------------------+------------------+-------------------------+----------------+
-
 |Resistance Training  |improves          |Insulin Sensitivity      |0.95            |
-
 |Aerobic Exercise     |reduces           |Systolic Blood Pressure  |0.92            |
-
 +---------------------+------------------+-------------------------+----------------+
+```
 
 To Do / Future Enhancements
 - Add unit and integration tests using pytest.
