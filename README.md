@@ -18,15 +18,7 @@ Performance-aware Design: Built for lightweight serverless Databricks environmen
 
 Project Structure
 
-pubmed_etl/n
-├── pubmed_etl.py                  # Main ETL driver
-├── modules/
-│   ├── meshmap.py                 # MeSH mapping + outcome list
-│   └── pubmed_config.py          # Central config
-├── firedb/
-│   └── fire-db/                  # Repos root
-├── pubmed_etl.log                 # Logging output
-└── README.md                      # You are here
+<pre> ```text pubmed_etl/ ├── pubmed_etl.py # Main ETL driver ├── modules/ │ ├── meshmap.py # MeSH mapping tree + outcome keyword list │ └── pubmed_config.py # Central config ├── firedb/ │ └── fire-db/ # Repos root ├── pubmed_etl.log # Logging output └── README.md # You are here ``` </pre>
 
 Extracted Knowledge Format
 Each PubMed article is transformed to include:
