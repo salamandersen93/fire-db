@@ -52,18 +52,14 @@ Each PubMed article is transformed to include:
 
 Configuration
 Defined in pubmed_config.py:
-
-python
-Copy
-Edit
 EMAIL = ""
 INCREMENTAL = True               # Toggles full vs. incremental load
 BATCH_SIZE = 500
 TARGET_COUNT = 10000            # Articles to fetch per run
 
 Sample Query Output:
-Querying high-confidence relationships:
 
+Querying high-confidence relationships:
 SELECT exercise_modality, relationship_type, outcome, confidence_score
 FROM firedb_exercise_outcome_relationships
 WHERE confidence_score > 0.8
@@ -93,10 +89,15 @@ Duration: 314.6 seconds
 
 === TOP CONFIDENCE RELATIONSHIPS ===
 +---------------------+------------------+-------------------------+----------------+
+
 |exercise_modality    |relationship_type |outcome                  |confidence_score|
+
 +---------------------+------------------+-------------------------+----------------+
+
 |Resistance Training  |improves          |Insulin Sensitivity      |0.95            |
+
 |Aerobic Exercise     |reduces           |Systolic Blood Pressure  |0.92            |
+
 +---------------------+------------------+-------------------------+----------------+
 
 To Do / Future Enhancements
