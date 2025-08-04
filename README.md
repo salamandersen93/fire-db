@@ -18,7 +18,7 @@ Performance-aware Design: Built for lightweight serverless Databricks environmen
 
 Project Structure
 
-pubmed_etl/
+pubmed_etl/n
 ├── pubmed_etl.py                  # Main ETL driver
 ├── modules/
 │   ├── meshmap.py                 # MeSH mapping + outcome list
