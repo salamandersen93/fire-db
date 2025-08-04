@@ -1,4 +1,4 @@
 .databrickscfg
 .awsconfig
 pubmed_config.py
-notebooks/wger_ingestion
+/notebooks/wger_ingestion
