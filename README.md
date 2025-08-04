@@ -18,15 +18,15 @@ Performance-aware Design: Built for lightweight serverless Databricks environmen
 
 Project Structure
 
-graph TD
-  A[pubmed_etl/] --> A1[pubmed_etl.py]
-  A --> A2[modules/]
-  A2 --> A2a[meshmap.py<br><i><small>MeSH mapping + outcome list</small></i>]
-  A2 --> A2b[pubmed_config.py<br><i><small>Central config</small></i>]
-  A --> A3[firedb/]
-  A3 --> A3a[fire-db/<br><i><small>Repos root</small></i>]
-  A --> A4[pubmed_etl.log<br><i><small>Logging output</small></i>]
-  A --> A5[README.md<br><i><small>You are here</small></i>]
+pubmed_etl/
+├── pubmed_etl.py                  # Main ETL driver
+├── modules/
+│   ├── meshmap.py                 # MeSH mapping + outcome list
+│   └── pubmed_config.py          # Central config
+├── firedb/
+│   └── fire-db/                  # Repos root
+├── pubmed_etl.log                 # Logging output
+└── README.md                      # You are here
 
 Extracted Knowledge Format
 Each PubMed article is transformed to include:
