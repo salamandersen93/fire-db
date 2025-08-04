@@ -17,7 +17,7 @@ This project implements a scalable ETL pipeline for ingesting, processing, and e
 #### Rich Metadata Logging: Tracks runtime statistics and ETL health in script_run_metadata.
 #### Performance-aware Design: Built for lightweight serverless Databricks environments.
 
-###Project Structure
+### Project Structure
 ```
 text pubmed_etl/ 
 ├── pubmed_etl.py # Main ETL driver 
@@ -30,7 +30,7 @@ text pubmed_etl/
 └── README.md # You are here
 ```
 
-###Extracted Knowledge Format
+### Extracted Knowledge Format
 Each PubMed article is transformed to include:
 - Metadata: PMID, title, abstract, journal, MeSH terms, publication types, DOI, and sample size.
 - Enriched Fields:
